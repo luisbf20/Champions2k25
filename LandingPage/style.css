@@ -1,0 +1,94 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1767837.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Cubre toda la ventana */
+    background-position: center;
+    color: #fff;
+}
+
+/* Estructura principal */
+.main {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    width: 100%;
+}
+
+/* Estilo del menú */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    margin: 20px;
+    padding: 20px;
+    width: 80%; /* Ancho del cuadro */
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Transición para el fondo al hacer scroll */
+}
+
+/* Para que las secciones estén al 100% de la altura de la ventana */
+section {
+    min-height: 100vh; /* Cada sección ocupará toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hacer que las secciones cambien de color cuando el usuario hace scroll */
+section.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer (opcional) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

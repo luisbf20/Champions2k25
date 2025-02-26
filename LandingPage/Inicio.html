@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page - Champions2k25</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body> 
+
+        <main class="main">
+            <div class="center">
+                <div>
+                    <h1 class="h1">CHAMPIONS 2K25</h1>
+                    <p>La mejor guerra del mundo</p>
+                </div>
+                <div>
+                    <ul class="links">
+                        <li><a href="#presentacion">Presentación del equipo</a></li>
+                        <li><a href="#descripcion">Descripción del proyecto</a></li>
+                        <li><a href="#documentacion">Documentación</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="presentacion" class="section">
+                <p>Conoce a los miembros del equipo:</p>
+                <div class="jugador">
+                    <h3>Hugo Garcia Garcia</h3>
+                    <img src="imagenes/hugo.jpg" alt="Hugo Garcia Garcia">
+                    <p>Hugo se ha encargado principalmente en esta primera parte de la implementación de toda la lógica del juego.<br>
+                        Más adelante también formará parte de la creación de la interfaz gráfica.
+                    </p>
+                </div>
+
+                <div class="jugador">
+                    <h3>Luis Bueno Fernandez</h3>
+                    <img src="imagenes/luis.jpg" alt="Luis Bueno Fernandez">
+                    <p>Luis se encargo de desarrollar la página web en esta primera parte del proyecto.<br>
+                        Más adelante también formará parte de la creación de la interfaz gráfica.
+                    </p>
+                </div>
+            </section>
+
+            <section id="descripcion" class="section">
+                <p>Nuestra guerra será una competicón de fútbol en la que se dan cita los mejores equipos del mundo.<br>
+                Cada equipo tendrá diferentes habilidades que podrá usar en cualquier momento.<br>
+                Solo puede quedar uno en pie y estos son los distintos equipos que participan: 
+                </p>
+                <div class="imagenes">
+                    <img src="logos/inter.jpg">
+                    <img src="logos/barsa.jpg">
+                    <img src="logos/madrid.jpg">
+                    <img src="logos/milan.jpg">
+                    <img src="logos/bayer.jpg">
+                    <img src="logos/psg.jpg">
+                    <img src="logos/liverpol.jpg">
+                    <img src="logos/city.jpg">
+                </div>
+                
+
+            </section>
+
+
+            <section id="documentacion" class="section">
+                <div class="diagrama">
+                    <img src="imagenes/clases.jpg">
+                </div>
+            </section>
+
+            <section id="galeria" class="section">
+                <div class="slider">
+                    <img class="slide" src="logos/uno.png">
+                    <img class="slide" src="logos/dos.png">
+                    <img class="slide" src="logos/tres.png">
+                    <img class="slide" src="logos/cuatro.png">
+                </div>
+                <button class="siguiente" onclick=nextImage()>&#10095;</button>
+            </section>
+        </main>
+
+
+        <footer>
+            <a href="https://trello.com/b/EMHa2KQ4/champions2k25">
+                <img src="imagenes/trello.png">
+            </a>
+            <a href="https://github.com/luisbf20/Champions2k25">
+                <img src="imagenes/git.png">
+            </a>
+
+        </footer>
+
+        
+
+    </body>
+    <script src="script.js"></script>
+</html>
